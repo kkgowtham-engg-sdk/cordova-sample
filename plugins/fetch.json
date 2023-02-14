@@ -1,0 +1,26 @@
+{
+  "cordova-plugin-device": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-device"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "com.moe.uiplugin": {
+    "source": {
+      "type": "local",
+      "path": "/Users/gowthamkk/others/c_demo/node_modules/com.moe.uiplugin"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-moengage-core": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-moengage-core"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

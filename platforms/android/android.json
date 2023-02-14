@@ -1,0 +1,103 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"PluginDemo\"><param name=\"android-package\" value=\"cordova-plugin-demo.PluginDemo\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"DemoPlugin\"><param name=\"android-package\" value=\"cordova.plugin.demo.DemoPlugin\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"uiplugin\"><param name=\"android-package\" value=\"com.moe.uiplugin.uiplugin\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"MoEngage\"><param name=\"android-package\" value=\"com.moengage.cordova.MoECordova\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.moengage.sampleapp"
+    },
+    "cordova-plugin-demo": {
+      "PACKAGE_NAME": "com.moengage.sampleapp"
+    },
+    "cordova.plugin.demo": {
+      "PACKAGE_NAME": "com.moengage.sampleapp"
+    },
+    "com.moe.uiplugin": {
+      "PACKAGE_NAME": "com.moengage.sampleapp"
+    },
+    "cordova-moengage-core": {
+      "PACKAGE_NAME": "com.moengage.sampleapp"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-device.device",
+      "file": "plugins/cordova-plugin-device/www/device.js",
+      "pluginId": "cordova-plugin-device",
+      "clobbers": [
+        "device"
+      ]
+    },
+    {
+      "id": "com.moe.uiplugin.uiplugin",
+      "file": "plugins/com.moe.uiplugin/www/uiplugin.js",
+      "pluginId": "com.moe.uiplugin",
+      "clobbers": [
+        "cordova.plugins.uiplugin"
+      ]
+    },
+    {
+      "id": "cordova-moengage-core.MoECordova",
+      "file": "plugins/cordova-moengage-core/www/MoECordova.js",
+      "pluginId": "cordova-moengage-core",
+      "clobbers": [
+        "MoECordova"
+      ]
+    },
+    {
+      "id": "cordova-moengage-core.MoEConstants",
+      "file": "plugins/cordova-moengage-core/www/MoEConstants.js",
+      "pluginId": "cordova-moengage-core",
+      "clobbers": [
+        "MoEConstants"
+      ]
+    },
+    {
+      "id": "cordova-moengage-core.MoEJsonProvider",
+      "file": "plugins/cordova-moengage-core/www/MoEJsonProvider.js",
+      "pluginId": "cordova-moengage-core",
+      "clobbers": [
+        "MoEJsonProvider"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-device": "2.1.0",
+    "cordova-plugin-demo": "1.0.0",
+    "cordova.plugin.demo": "1.0.0",
+    "com.moe.uiplugin": "1.0.0",
+    "cordova-moengage-core": "8.1.0"
+  }
+}
