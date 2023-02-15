@@ -13,15 +13,7 @@
               "count": 1
             },
             {
-              "xml": "<feature name=\"PluginDemo\"><param name=\"android-package\" value=\"cordova-plugin-demo.PluginDemo\" /></feature>",
-              "count": 1
-            },
-            {
-              "xml": "<feature name=\"DemoPlugin\"><param name=\"android-package\" value=\"cordova.plugin.demo.DemoPlugin\" /></feature>",
-              "count": 1
-            },
-            {
-              "xml": "<feature name=\"uiplugin\"><param name=\"android-package\" value=\"com.moe.uiplugin.uiplugin\" /></feature>",
+              "xml": "<feature name=\"MyPlugin\"><param name=\"android-package\" value=\"com.moe.uiplugin.MyPlugin\" /></feature>",
               "count": 1
             },
             {
@@ -61,11 +53,11 @@
       ]
     },
     {
-      "id": "com.moe.uiplugin.uiplugin",
+      "id": "com.moe.uiplugin",
       "file": "plugins/com.moe.uiplugin/www/uiplugin.js",
       "pluginId": "com.moe.uiplugin",
       "clobbers": [
-        "cordova.plugins.uiplugin"
+        "MyPlugin"
       ]
     },
     {

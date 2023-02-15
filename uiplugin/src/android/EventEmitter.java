@@ -1,4 +1,4 @@
-package com.moe.uiplugin.uiplugin;
+package com.moe.uiplugin;
 
 import android.os.Handler;
 import android.os.Looper;
@@ -13,7 +13,7 @@ public class EventEmitter {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                PluginResult pluginResult = new PluginResult(PluginResult.Status.OK,"Sample Message");
+                PluginResult pluginResult = new PluginResult(PluginResult.Status.OK,"Sample Message From Hybrid To Native");
                 CallbackHelper.context.sendPluginResult(pluginResult);
             }
         }, 10000);

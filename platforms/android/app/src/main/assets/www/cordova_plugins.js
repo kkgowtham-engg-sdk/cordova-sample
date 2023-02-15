@@ -9,11 +9,11 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       ]
     },
     {
-      "id": "com.moe.uiplugin.uiplugin",
+      "id": "com.moe.uiplugin.MyPlugin",
       "file": "plugins/com.moe.uiplugin/www/uiplugin.js",
       "pluginId": "com.moe.uiplugin",
       "clobbers": [
-        "cordova.plugins.uiplugin"
+        "MyPlugin"
       ]
     },
     {

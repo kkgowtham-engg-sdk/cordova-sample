@@ -1,4 +1,4 @@
-package com.moe.uiplugin.uiplugin;
+package com.moe.uiplugin;
 
 import android.os.Handler;
 import android.os.Looper;

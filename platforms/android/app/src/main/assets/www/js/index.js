@@ -68,7 +68,7 @@ function onDeviceReady() {
         li.innerText = item;
         list.appendChild(li);
     });
-
+    document.getElementById('showInApp').onclick = showInApp;
 
     moe.on('onInAppShown', function (inAppInfo) {
         console.log('onInAppShown() :: callback received.InApp Shown with Info: ' + JSON.stringify(inAppInfo));
@@ -85,8 +85,6 @@ function onDeviceReady() {
 document.getElementById("saveMessageInPref").onclick = function(){
     putStringInPref.get("Hi Pref!", successCallback, errorCallback)
 }
-
-
 }
 
 fun showInApp(){
